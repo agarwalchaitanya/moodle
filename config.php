@@ -6,10 +6,10 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'pgsql';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = getenv('DATABASE_HOST');
-$CFG->dbname    = getenv('DATABASE_NAME');
-$CFG->dbuser    = getenv('DATABASE_USER');
-$CFG->dbpass    = getenv('DATABASE_PASSWORD');
+$CFG->dbhost    = getenv('DB_HOST');
+$CFG->dbname    = getenv('DB_NAME');
+$CFG->dbuser    = getenv('DB_USER');
+$CFG->dbpass    = getenv('DB_PASSWORD');
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
